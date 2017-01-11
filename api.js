@@ -10,9 +10,9 @@
         output: process.stdout
     });
 
-console.log(chalk.black.bgWhite.bold("Please type in the name of your state, e.g Abuja"));
+console.log(chalk.black.bgWhite.bold("Please type in the name of your city, e.g Abuja"));
 rl.question('-->  ', (city) => {
-    apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + state + '&appid=' + APIKEY;
+    apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + APIKEY;
     getWeather();
     rl.close();
 });
